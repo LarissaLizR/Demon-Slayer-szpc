@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.22.2/sweetalert2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <link rel="icon" href="./src/imagens/logo.png" >
+    
+  
+    <title>Demon Slayer</title>
+</head>
+<body>
+
+ 
+  <video autoplay muted loop id="player" class="player">
+    <source src="./src/imagens/tanjiro-and-nezuko-kimetsu-no-yaiba-4k-live-wallpaper.mp4" type="video/mp4">
+  </video>
+
+
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/5ede4a3fb760540004f2c5e9.png" alt="Demon Slayer" >
+    </header>
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo">Selecione um personagem</h1>
+
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="tanjiro" data-name="Tanjiro"
+                data-description="Marca Caçador de Oni: Quando ativada, essa marca potencializa a força e velocidade de Tanjiro para níveis sobrehumanos. 
+                Espada Nichirin Escarlate: Quando sua espada Nichirin fica vermelho sangue, consegue impedir a regeneração avançada dos onis.
+                Mundo Transparente: Tanjiro sempre teve sentidos muito apurados, mas após aperfeiçoar essa habilidade, sua intuição chegou ao limite.">
+                    <img class="imgPersonagens"
+                      src="./src/imagens/card-tanjiro.jpg"
+                      alt="Personagem Tanjiro Kamado"
+                    />
+                  </li>
+                  <li class="personagem" id="nezuko" data-name="Nezuko"
+                  data-description="Sua transformação em demônio lhe trouxe a capacidade de alterar seu tamanho, o que usa para facilitar o seu transporte durante o dia. Como qualquer demônio, ela morreria na luz do sol. Mas a transformação também lhe concedeu uma arma secreta: um Kekeijutsu, Arte Demoníaca de Sangue. Usando Sangue Explosivo, ela consegue controlar seu sangue de demônio para transformá-los em chamas.">
+                    <img class="imgPersonagens"
+                      src="./src/imagens/card-nezuko.jpg"
+                      alt="Personagem Nezuko Kamado"
+                    />
+                  </li>
+        
+                  <li class="personagem" id="zenitsu" data-name="Zenitsu Agatsuma"
+                  data-description="
+                  Poderes e Habilidades
+                  Assim como Tanjiro tem um olfato muito apurado, Zenitsu consegue ouvir sons com uma sensibilidade acima de qualquer humano normal. Sua audição é tão apurada que ele consegue até mesmo discernir o som das pessoas do som produzido pelos onis.">
+                    <img class="imgPersonagens"
+                      src="./src/imagens/card-zenitsu.jpg"
+                      alt="Personagem Zenitsu Agatsuma"
+                    />
+                  </li>
+        
+                  <li class="personagem" id="inosuke" data-name="Inosuke Hashibira"
+                  data-description="
+                  Respiração da Besta: É a Técnica de Respiração que ele mesmo criou, combinando movimentos simples de maneira inusitada para surpreender seus oponentes.">
+                    <img class="imgPersonagens"
+                      src="./src/imagens/card-inosuke.jpg"
+                      alt="Personagem Inosuke Hashibira"
+                    />
+                  </li>
+        
+                  <li class="personagem" id="giyuu" data-name="Giyu Tomioka" data-description="é o Pilar da Respiração da Água, pupilo de Urokodaki. Ele tem um jeitão rústico, de poucos amigos, mas é uma pessoa simpática e extremamente justa. É tão poderoso que conseguiu superar seu mestre, criando novas formas da Respiração da Água. Consegue derrotar um onis mantendo a mais pura calma, sem parecer se mover.">
+                    <img class="imgPersonagens"
+                      src="./src/imagens/card-giyuu.jpg"
+                      alt="Personagem Giyu Tomioka"
+                    />
+                  </li>
+        
+                  <li class="personagem" id="mitsuri" data-name="Mitsuri Kanroji"
+                  data-description=" é a Hashira da Respiração do Amor. Ela consegue ver o melhor em cada um e se apaixona por todos. Demonstrações de amor a deixam toda derretidinha. O jeito mais fácil de defini-la é com a canção “Amor de Que”, da Pabllo Vittar. Seus ataques são como um chicote.">
+                    <img class="imgPersonagens"
+                      src="./src/imagens/card-mitsuri.jpg"
+                      alt="Personagem Mitsuri Kanroji"
+                    />
+                  </li>
+        
+                  <li class="personagem" id="kyojuro" data-name="Kyojuro Rengoku" data-description="é a Hashira de Respiração das Chamas. Ele é empolgado em tudo o que faz, como um labrador humano. Tudo que faz é com uma imensa animação e defende a crença de que os mais fortes tem o dever de proteger os mais fracos. Ele tem um papel crucial no filme Demon Slayer: Mugen Train.">
+                    <img class="imgPersonagens"
+                      src="./src/imagens/card-kyojuro.jpg"
+                      alt="Personagem Kyojuro Rengoku"
+                    />
+                  </li>
+        
+                  <li class="personagem" id="muichiro" data-name="Muichiro Tokito"
+                  data-description="Muichiro Tokito é o Hashira da Respiração da Névoa. Ele é uma pessoa avoada, dificilmente prestando atenção no que acontece ao seu redor. Isso também se reflete em seu modo irreverente de ver a vida, mas muda completamente para um humor sério quando alguém desonra seu mestre. Descendente de um Kizuki, sua respiração única foca em usar velocidade.">
+                    <img class="imgPersonagens"
+                      src="./src/imagens/card-muichiro.jpg"
+                      alt="Personagem Muichiro Tokito"
+                    />
+                  </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img
+            class="personagem-grande imgPersonagens"
+            src="./src/imagens/card-tanjiro.png"
+            alt="Tanjiro">
+
+           <div class="informacoes-personagem">
+            <h2 class="nome-personagem" id="nome-personagem">Tanjiro</h2>
+            <p class="descricao-personagem"
+            id="descricao-personagem">
+            Marca Caçador de Oni: Quando ativada, essa marca potencializa a força e velocidade de Tanjiro para níveis sobrehumanos. 
+            Espada Nichirin Escarlate: Quando sua espada Nichirin fica vermelho sangue, consegue impedir a regeneração avançada dos onis.
+            Mundo Transparente: Tanjiro sempre teve sentidos muito apurados, mas após aperfeiçoar essa habilidade, sua intuição chegou ao limite.</p>
+           </div>
+        </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.22.2/sweetalert2.min.js"></script>
+
+</body>
+</html>
